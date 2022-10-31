@@ -1,0 +1,65 @@
+\documentclass{article}
+
+\usepackage[a4paper, total={7in, 10in}]{geometry}
+\usepackage{amsmath}
+
+\title{\Huge{\textbf{Linear Algebra Notes}}}
+\author{ }
+\date{ }
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+
+\addcontentsline{toc}{section}{\large{Week 4}}
+\section*{\center\huge{Week 4}}
+
+\section{Determinant of Matrix}
+
+\subsection{Features and uses}
+
+\begin{itemize}
+	\addtolength\itemsep{-2.5mm}
+	\item It is unique number.
+	\item It is used to find the area of a triangle.
+	\item It is used to find the inverse of a matrix.
+	\item It is used to solve the system of linear equations.
+\end{itemize}
+
+\subsection{Orders}
+
+\begin{enumerate}
+	\item Order 1
+	      $$A = \begin{bmatrix}a_{11}\end{bmatrix}$$
+	      $$\begin{vmatrix}A\end{vmatrix} = a_{11}$$
+	\item Order 2
+	      $$A = \begin{bmatrix}
+			      a_{11} & a_{12} \\
+			      a_{21} & a_{22}
+		      \end{bmatrix}$$
+	      $$\begin{vmatrix}A\end{vmatrix} = a_{11}a_{22} - a_{21}a_{12}$$
+	\item Order 3
+	      $$A = \begin{bmatrix}
+			      a_{11} & a_{12} & a_{13} \\
+			      a_{21} & a_{22} & a_{23} \\
+			      a_{31} & a_{32} & a_{33}
+		      \end{bmatrix}$$
+	      $$\begin{vmatrix}A\end{vmatrix} =
+		      a_{11} \begin{vmatrix}
+			      a_{22} & a_{23} \\
+			      a_{32} & a_{33}
+		      \end{vmatrix} -
+		      a_{12} \begin{vmatrix}
+			      a_{21} & a_{23} \\
+			      a_{31} & a_{33}
+		      \end{vmatrix} +
+		      a_{13} \begin{vmatrix}
+			      a_{21} & a_{22} \\
+			      a_{31} & a_{32}
+		      \end{vmatrix}
+	      $$
+\end{enumerate}
+
+\end{document}
